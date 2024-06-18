@@ -27,7 +27,6 @@
           <th>Nama</th>
           <th>Alamat</th>
           <th>Contact Person</th>
-          <th>Transaksi</th>
           <th style="text-align: center;">Aksi</th>
         </tr>
         </thead>
@@ -42,8 +41,6 @@
         <td><?php echo $u['nama']; ?></td>
         <td><?php echo $u['alamat']; ?></td>
         <td><?php echo $u['cp']; ?></td>
-        <?php $total_tagihan = $this->CRUD_model->total_tagihan($u['id_pelanggan']); ?>
-        <td style="text-align: right;"><?php echo number_format($total_tagihan,0,".",","); ?></td>
         <td align="center">
           <a href="<?php echo site_url('admin/pelanggan/editdata/'.$u['id']);?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"> </i></a>  
           <a href="<?php echo site_url('admin/pelanggan/transaksi/'.$u['id_pelanggan']);?>" class="btn btn-success btn-xs"><i class="fa fa-opencart"> </i></a>  

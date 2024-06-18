@@ -1,6 +1,6 @@
   <ol class="breadcrumb">
     <li><a href="<?php echo site_url('admin/home');?>"><i class="fa fa-dashboard"> </i> Home</a></li>
-    <li class="active">Data Suplier</li>
+    <li class="active">Data Suplier2</li>
   </ol>
 <div id="myalert">
   <?php echo $this->session->flashdata('alert', true)?>

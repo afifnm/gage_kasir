@@ -14,8 +14,7 @@
   elseif($count<999){
     $count++;
     $nonota = $gage.'0'.$count;
-  }
-  elseif($count<9999){
+  }else {
     $count++;
     $nonota = $gage.$count;
   }
@@ -180,7 +179,7 @@
     $countpelanggan++;
     $id_pelanggan = 'GG0'.$countpelanggan;
   }
-  elseif($countpelanggan<10000){
+  else{
     $countpelanggan++;
     $id_pelanggan = 'GG'.$countpelanggan;
   }
